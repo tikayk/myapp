@@ -50,3 +50,12 @@
 - belongs_to :user
 - has_many :comments
 - has_many :likes
+
+
+## categoriesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|post_id|integer|null: false, foreign_key: true|
+|category_name|string|null: false|
+### Association
+- belongs_to :post
